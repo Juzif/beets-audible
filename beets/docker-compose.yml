@@ -9,9 +9,9 @@ services:
       - PGID=1000
       - TZ=Asia/Singapore
     volumes:
-      - /mnt/user/appdata/beets-audible/config:/config
+      - /mnt/user/appdata/beets-audible:/config
       - ./plugins:/plugins
       - ./scripts:/config/custom-cont-init.d
       - /path/to/plex/audiobooks:/audiobooks
-      - /path/to/temp/untagged:/untagged
+      - /mnt/user/AudYard/temp/untagged:/untagged
     restart: unless-stopped
