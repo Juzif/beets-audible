@@ -9,7 +9,7 @@ services:
       - PGID=1000
       - TZ=Asia/Singapore
     volumes:
-      - ./config:/config
+      - /mnt/user/appdata/beets-audible/config:/config
       - ./plugins:/plugins
       - ./scripts:/config/custom-cont-init.d
       - /path/to/plex/audiobooks:/audiobooks
