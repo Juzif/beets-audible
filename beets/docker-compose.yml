@@ -7,11 +7,11 @@ services:
       # Update as needed
       - PUID=1000
       - PGID=1000
-      - TZ=Asia/Singapore
+      - TZ=Asia/Dubai
     volumes:
       - /mnt/user/appdata/beets-audible:/config
       - ./plugins:/plugins
       - ./scripts:/config/custom-cont-init.d
-      - /path/to/plex/audiobooks:/audiobooks
+      - /mnt/user/AudYard/audiobooks/:/audiobooks
       - /mnt/user/AudYard/temp/untagged:/untagged
     restart: unless-stopped
